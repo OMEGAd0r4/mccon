@@ -44,8 +44,6 @@ class warnCommand extends commando.Command{
         message.channel.send(`${warnUser} has been warned`)
 
         warnUser.sendMessage(warnUser + " Hey you have been warned from the MCCon Network for the reason of " + '[' + warnreason + ']').catch()
-
-        message.delete();
   }
 }
 
