@@ -43,7 +43,6 @@ class banCommand extends commando.Command{
 
         warnUser.sendMessage(warnUser + " Hey you have been banned from the MCCon Network for the reason of " + '[' + warnreason + ']').catch()
 
-        message.delete();
   }
 }
 
