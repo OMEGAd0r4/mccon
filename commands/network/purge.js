@@ -21,10 +21,6 @@ class purgeCommand extends commando.Command {
         var staffrole = message.guild.roles.find(`name`, "Staff");
 
         if (!message.member.roles.has(staffrole.id)) return message.channel.send("Insufficient permission");  
-            
-        let messagecount = parseInt(args[1]) || 1;
-
-        var deletedMessages = -1;
 
         message.channel.bulkDelete(args[0]).then(() => {
           message.channel.send("Purged all messages")})
