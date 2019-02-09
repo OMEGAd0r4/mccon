@@ -12,7 +12,7 @@ class purgeCommand extends commando.Command {
         name: 'purge', 
         group: 'network',
         memberName: 'purge',
-        description: "Shows the information of the server"
+        description: "Deletes messages"
       });
     }
 
