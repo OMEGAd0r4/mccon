@@ -23,7 +23,7 @@ class purgeCommand extends commando.Command {
         if (!message.member.roles.has(staffrole.id)) return message.channel.send("Insufficient permission");  
 
         message.channel.bulkDelete(args[0]).then(() => {
-          message.channel.send("Purged all messages")}.then(message => message.delete(2000));
+          message.channel.send("Purged all messages")}).then(message => message.delete(2000));
     }
 }
 
