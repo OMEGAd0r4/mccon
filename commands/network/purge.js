@@ -24,11 +24,11 @@ class purgeCommand extends commando.Command {
       
         var msg1 = args[0];
       
-        if (!msg1) return message.channel.send("Usage: .purge <**ammounce**>")
+        if (!msg1) return message.channel.send("Usage: .purge <**ammounce**>");
       
       
         message.channel.bulkDelete(args[0]).then(() => {
-          message.channel.send("Purged all messages")}).then(message.delete(2000);
+          message.channel.send("Purged all messages")}).then(message.delete(2000));
     }
 }
 
