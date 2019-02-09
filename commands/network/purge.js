@@ -28,7 +28,7 @@ class purgeCommand extends commando.Command {
       
       
         message.channel.bulkDelete(args[0]).then(() => {
-          message.channel.send("Purged all messages")}).then(message.delete(.catch(2000)));
+          message.channel.send("Purged all messages")}).then(message.delete(2000));
     }
 }
 
