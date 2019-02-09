@@ -18,7 +18,11 @@ class purgeCommand extends commando.Command {
 
     async run(message)
     {
-            
+        var staffrole = message.guild.roles.find(`name`, "Staff");
+
+        if (!msgmsg) return message.channel.send("Usage: .chanmsgcreate <**message**>");
+
+        if (!message.member.roles.has(staffrole.id)) return message.channel.send("Insufficient permission");  
             
         let messagecount = parseInt(args[1]) || 1;
 
