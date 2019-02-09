@@ -16,7 +16,7 @@ class purgeCommand extends commando.Command {
       });
     }
 
-    async run(message)
+    async run(message, args)
     {
         var staffrole = message.guild.roles.find(`name`, "Staff");
 
